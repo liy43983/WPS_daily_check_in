@@ -24,6 +24,7 @@ my_code = os.environ["CODE"]
 my_bark = os.environ["BARK"]
 
 
+
 def request_re(sid, invite_userid, rep = 30):
     invite_url = 'http://zt.wps.cn/2018/clock_in/api/invite'
     r = requests.post( invite_url, headers={ 'sid': sid }, data={ 'invite_userid': my_sid, "client_code": my_code, "client": "wechat" } )
